@@ -5,12 +5,15 @@ html {
 }
 
 body {
-  background-image: url('../../images/bg1.webp');
-  background-position: center;
+  background-image: url(../../images/bg1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
+
+
+
 
 h1,h2,h3 {
   font-family: 'Monoton', cursive;
@@ -29,8 +32,37 @@ nav {
   background-color: rgba(151, 127, 127, 0.945);
 
   position: fixed;
-        top: 0;
+  top: 0;
 }
+
+.flex-container  {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 192, 203, 0.351);
+  text-decoration: underline;
+  border-radius: 13px;
+  color: rgb(71, 58, 60);
+}
+
+#records .flex-container > div {
+  width: 33%;
+  background-color: rgba(247, 247, 247, 0.73);
+  border: 2px solid yellow;
+}
+
+
 
 
 h1,h2,h3, #contact, footer {
@@ -58,7 +90,7 @@ p, li {
 
 img {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
   object-fit: cover;
   box-shadow: 0px 0px 10px black;
 }
@@ -74,7 +106,9 @@ img {
 
     /* Medium devices (tablets, 768px and up) */
     @media (min-width: 768px) {
-
+      img {
+        width: 100%;
+      }
     }
 
 /* Large devices (desktops, 992px and up)  */
