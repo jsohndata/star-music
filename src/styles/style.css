@@ -14,8 +14,6 @@ body {
 
 h1,h2,h3 {
   font-family: 'Monoton', cursive;
-  margin-top: 23px;
-  margin-bottom: 23px;
 }
 
 h1 {
@@ -26,6 +24,13 @@ h1 {
 h2 {
   font-size: clamp(2rem, 3vw, 2.5rem);
   font-weight: 550;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 main, section {
