@@ -8,4 +8,4 @@ Study of Generative AI. CSS, FlexBox, and HTML for C-11.
 <br>
 
 ## Website
-* 👉 [link](https://jsohndata.github.io/star-music/)
+* 👉 [jsohndata.github.io/star-music/](https://jsohndata.github.io/star-music/)
