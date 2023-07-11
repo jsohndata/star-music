@@ -12,11 +12,14 @@ body {
   background-position: center;
 }
 
-
-
-
 h1,h2,h3 {
   font-family: 'Monoton', cursive;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
 }
 
 main, section {
@@ -30,6 +33,7 @@ main {
 nav {
   width: 100%;
   background-color: rgba(151, 127, 127, 0.945);
+  padding: 15px;
 
   position: fixed;
   top: 0;
@@ -37,6 +41,11 @@ nav {
 
 .flex-container  {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+  width: min(90%, 1200px);
+  margin: 0 auto;
 }
 
 nav ul {
@@ -57,12 +66,29 @@ nav ul li a:hover {
 }
 
 #records .flex-container > div {
-  width: 33%;
+  width: 90%;
   background-color: rgba(247, 247, 247, 0.73);
-  border: 2px solid yellow;
+  border: 4px solid rgb(211, 168, 229);
+  border-radius: 13px;
 }
 
+    /* sm */
+    @media (min-width: 576px) {
+      #records .flex-container > div {
+        width: 40%;
+      }
+    }
 
+    /* md */
+    @media (min-width: 768px) {
+      #records .flex-container > div {
+        width: 30%;
+      }
+    }
+
+    #records .flex-container > div > p {
+      padding: 20px;
+    }
 
 
 h1,h2,h3, #contact, footer {
@@ -93,12 +119,14 @@ img {
   aspect-ratio: 1/1;
   object-fit: cover;
   box-shadow: 0px 0px 10px black;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
 }
 
     /* Small devices (landscape phones, 576px and up) */
     @media (min-width: 576px) { 
       img {
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         display: block;
       }
