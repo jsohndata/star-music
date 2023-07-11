@@ -20,6 +20,12 @@ h1,h2,h3 {
 
 h1 {
   font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 550;
+}
+
+h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 550;
 }
 
 main, section {
@@ -32,7 +38,7 @@ main {
 
 nav {
   width: 100%;
-  background-color: rgba(151, 127, 127, 0.945);
+  background-color: rgba(151, 127, 127, 0.757);
   padding: 15px;
 
   position: fixed;
