@@ -155,24 +155,3 @@ img {
 
 /* X-Large devices (large desktops, 1200px and up) */
 /* @media (min-width: 1200px) { ... } */
-
-#mozarts-ghost {
-  position: fixed;
-  opacity: 1;
-  bottom: 0;
-  left: 10px;
-  padding: 10px;
-}
-
-#mozarts-ghost a:link,
-#mozarts-ghost a:visited {
-  color: rgb(9, 9, 31);
-  text-decoration: none;
-}
-
-#mozarts-ghost a:hover {
-  color: rgb(195, 0, 255);
-}
-
-
-
